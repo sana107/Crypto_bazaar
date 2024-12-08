@@ -28,8 +28,8 @@ const CoinCard = ({coin}) => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button variant="contained" fullWidth color="success" size="small">
-            <Link to={`/coin/${coin.item.id}`}>Learn More</Link>
+          <Button variant="contained" fullWidth  size="small" sx={{backgroundColor: "#ffecb3",color: "black"}} >
+            <Link to={`/coin/${coin.item.id}`} style={{color: "black"}}  >Learn More</Link>
           </Button>
         </CardActions>
       </Card>

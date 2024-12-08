@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Typography sx={{ margin: "20px" }} variant="h6" textAlign={"center"}>
+    <Typography sx={{ margin: "20px", color:"white" }} variant="h6" textAlign={"center"} >
       Crypto-Bazar
     </Typography>
   );

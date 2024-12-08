@@ -51,10 +51,10 @@ const Register = () => {
       navigate("/");
       toast.success("Login Successfully")
     }
-    if (isError && message) {
-      toast.error(message);
-    }
-  }, [user, message, isError]);
+    // if (isError && message) {
+    //   toast.error(message);
+    // }
+  }, [user, message]);
 
   if (isLoading) {
     return (
@@ -116,11 +116,12 @@ const Register = () => {
             onChange={handleChange}
           ></TextField>
           <Button
-            sx={{ margin: "10px 0px" }}
+            sx={{ margin: "10px 0px", backgroundColor: "#ffb300" }}
             variant="contained"
-            color="success"
+            
             fullWidth
             type="submit"
+            onClick={handleSubmit}
           >
             Register
           </Button>

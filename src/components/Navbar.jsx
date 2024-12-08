@@ -16,21 +16,21 @@ const Navbar = () => {
   const logOut = () => {
     dispatch(logOutUser())
   }
-
+//#fff8e1
   return (
-    <AppBar color="success">
+    <AppBar sx={{backgroundColor: "#ffecb3"}}>
       <Toolbar>
         <Typography sx={{ flexGrow: 1 }} variant="h5">
-          <Link to={"/"}>CryptoBazar</Link>
+          <Link to={"/"} style={{ color: 'black'}} >CryptoBazar</Link>
         </Typography>
 
         {user ? (
           <>
             <Button
               size="small"
-              sx={{ margin: "0px 5px" }}
+              sx={{ margin: "0px 5px" ,backgroundColor: "#ffb300"}}
               variant="contained"
-              color="error"
+              // color="error"
               onClick={logOut}
             >
               Logout
@@ -38,9 +38,9 @@ const Navbar = () => {
             <Badge badgeContent={CartItems.length} color="error">
               <Button
                 size="small"
-                sx={{ margin: "0px 5px" }}
+                sx={{ margin: "0px 5px",backgroundColor: "#ffd54f" }}
                 variant="contained"
-                color="secondary"
+                // color="secondary"
                 endIcon={<ShoppingCartIcon />}
               >
                 <Link to={"/cart"}>Cart</Link>
@@ -52,9 +52,9 @@ const Navbar = () => {
             <Link to={"/login"}>
               <Button
                 size="small"
-                sx={{ margin: "0px 5px" }}
+                sx={{ margin: "0px 5px" ,backgroundColor:"#ffb300"}}
                 variant="contained"
-                color="primary"
+                
               >
                 Login
               </Button>
@@ -62,9 +62,9 @@ const Navbar = () => {
             <Link to="/register">
               <Button
                 size="small"
-                sx={{ margin: "0px 5px" }}
+                sx={{ margin: "0px 5px" ,backgroundColor:"#ffd54f"}}
                 variant="contained"
-                color="primary"
+                
               >
                 Register
               </Button>

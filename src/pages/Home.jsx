@@ -4,6 +4,7 @@ import { Container, Grid, LinearProgress, Typography } from "@mui/material";
 import CoinCard from "../components/CoinCard";
 import { useDispatch, useSelector } from "react-redux";
 import { getTrendingcoins } from "../features/coin/coinSlice";
+// import LineGraph from "../components/LineGraph";
 
 const Home = () => {
   const { allcoins, isLoading, isError, message } = useSelector(
@@ -45,6 +46,7 @@ const Home = () => {
   return (
     <>
       <HeroSection />
+      
       <Typography variant="h4" textAlign={"center"} sx={{ margin: "20px 0px" }}>
         Top Trending Coins
       </Typography>

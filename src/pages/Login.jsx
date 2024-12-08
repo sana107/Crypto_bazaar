@@ -82,7 +82,7 @@ const Login = () => {
             value={password}
             onChange={handleChange}
           ></TextField>
-          <Button type="submit" variant="contained" color="success" fullWidth>
+          <Button type="submit" variant="contained" sx={{backgroundColor: "#ffb300"}} fullWidth>
             Login
           </Button>
         </form>

@@ -78,14 +78,15 @@ const CoinDetailsPage = () => {
         <CardActions>
           <Button
             variant="contained"
-            color="success"
+            // color="success"
+            sx={{backgroundColor: "#ffb300"}}
             onClick={() => {
               handleAddToCart(coin);
             }}
           >
             Add To Cart
           </Button>
-          <Button>Learn More</Button>
+          <Button sx={{backgroundColor: "#ffecb3"}}>Learn More</Button>
         </CardActions>
       </Card>
     </Container>
